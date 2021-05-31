@@ -1,13 +1,510 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Italiana&family=Telex&display=swap');
+body{
+  background: #F5F5F5;
+  font-family: 'Titillium Web', sans-serif;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  overflow: auto;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#container{
+  margin-left: 150px;
+  margin-right: 150px
 }
+
+
+/***************************** Navbar CSS *************************/
+
+navbar{
+  font-family: 'Titillium Web', sans-serif;
+  height: 60px;
+  color: rgb(92, 88, 88);
+  padding-left: 150px;
+  background: #ffffff;
+  padding-right: 150px;
+  display: flex;
+  border-bottom: 0.5px solid rgb(185, 183, 183);
+  padding-top: 10px;
+  justify-content: space-between;
+}
+
+#nav-left .nav-brand{
+  margin-top: 8px;
+  font-size: 24px;
+}
+
+#nav-list{
+  display: flex;
+  list-style-type: none;
+}
+
+#nav-item{
+  padding-left:20px;
+}
+
+#btn-block{
+  padding-left: 20px;
+  padding-right: 20px;
+  background: rgb(207, 46, 34);
+  color: #ffffff;
+  margin-left: 20px;
+  border-radius: 15px;
+  text-decoration: none;
+  padding-top: 6px;
+  padding-bottom: 6px;
+}
+
+#content{
+  background-repeat: no-repeat;
+  height: 500px;
+  background-size: cover;
+  margin-top: -26px;
+}
+
+#content h1{
+  padding-top: 30px;
+  font-size: 40px;
+  color: rgb(63, 62, 62);
+}
+
+#form-control{
+  height: 40px;
+  width: 400px;
+  border-top-left-radius: 6px;
+  border-bottom-left-radius: 6px;
+  border: none;
+}
+
+#form-group button{
+  height: 40px;
+  background: rgb(207, 46, 34);
+  color: #ffffff;
+  padding-left: 10px;
+  padding-right: 20px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+  border: none;
+}
+
+#dig{
+  margin-top: 20px;
+  left: 575px;
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#dig img{
+  height: 90px;
+  width: 90px;
+  border-radius: 45px;
+}
+
+#content ul{
+  margin-top: 70px;
+  padding: 30px;
+  padding-top: 50px;
+  max-width: 400px;
+  left: 30%;
+  background: #ffffff;
+  margin-left: 400px;
+  border-radius: 8px;
+  text-align: left;
+}
+
+#learn{
+  position: absolute;
+  background: #ffffff;
+  color: rgb(61, 60, 60);
+  padding-left: 80px;
+  padding-right: 150px;
+  left: 150px;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  margin-top: 3px;
+}
+
+#content ul li{
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+
+#point{
+  margin-bottom: -10px;
+  font-size: 30px;
+  color: orangered;
+}
+
+#learn p a{
+  text-decoration: none;
+}
+
+
+/*************************** Services *************************/
+#services{
+  padding-top: 30px;
+  margin-bottom: 30px;
+}
+
+#services h2{
+  font-size: 30px;
+  color: rgb(92, 88, 88);
+}
+
+#title::after{
+  content: '';
+  border-bottom: 3px solid rgb(201, 48, 48);
+  width: 200px;
+  display: block;
+  border-radius: 1.5px;
+  margin-top: 10px;
+  margin-left: 530px;
+}
+
+#row{
+  margin-left: 50px;
+  margin-right: 50px;
+  display: flex;
+}
+
+
+
+/*********************  Service *****************/
+#service{
+  flex-basis: 23%;
+  padding: 20px;
+  background: #ffffff;
+  margin: 10px;
+  border-radius: 7px;
+}
+
+#service img{
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+
+#service h4{
+  margin-bottom: -4px;
+}
+
+
+
+/****************** Footer **********************/
+#footer{
+  background: rgb(20, 18, 18);
+  color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+
+/****************** Add form **********************/
+#add-form{
+  background: #ffffff;
+  padding: 15px;
+  border-radius: 8px;
+  width: 400px;
+  margin-top: 60px;
+  position: absolute;
+  left: 35%;
+  bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#add-form img{
+  width: 80px;
+  height: 80px;
+  margin-left: 165px;
+  margin-bottom: -10px;
+}
+
+#add-form h2{
+  text-align: center;
+  color: rgb(94, 92, 92);
+}
+
+#add-form p{
+  color: rgb(94, 92, 92);
+  text-align: center;
+}
+
+#add-form-control{
+  display: block;
+  margin-left: 15px;
+  width: 350px;
+  padding-left: 10px;
+  color: rgb(66, 66, 66);
+  height: 30px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  border: none;
+  border-bottom: 1px solid grey;
+
+}
+
+#add-btn{
+  margin-bottom: 50px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 8px;
+  height: 35px;
+  width: 350px;
+  display: block;
+  text-align: center;
+  color: #ffffff;
+  background-color: rgb(25, 25, 226);
+}
+
+.or {
+  margin-top: -30px;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  color:grey;
+}
+
+.or:after,
+.or:before {
+    content: "";
+    display: block;
+    background: grey;
+    width: 350px;
+    height:1px;
+    margin: 0 10px;
+}
+
+#google-icon{
+  font-size: 25px;
+  margin-bottom: -5px;
+  margin-right: 10px;
+}
+
+#add-btn-google{
+  padding-top: 4px;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  margin-left: 20px;
+  border: none;
+  border-radius: 8px;
+  height: 35px;
+  font-size: 15px;
+  width: 350px;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  background: #e2dede;
+  color:#0e0101;
+}
+
+
+/******************************* content ***********/
+#results{
+  padding-top: 5px;
+  margin-left: 100px;
+  margin-right: 100px;
+  margin-bottom: 30px;
+}
+
+#results #heading{
+  font-size: 20px;
+  font-weight: normal;
+}
+
+#results #heading span{
+  font-weight: bold;
+}
+
+#results #row{
+  display: flex;
+}
+
+#results #row #item{
+  padding: 10px;
+  flex-basis: 20%;
+  background: #ffffff;
+  margin: 10px;
+}
+
+#results #row #item img{
+  height: 250px;
+}
+
+#results #row #item #pages{
+  position: absolute;
+  margin-top: -270px;
+  padding: 4px 10px 4px 10px;
+  margin-left: -15px;
+  background-color: #0172B5;
+  color: #ffffff;
+  line-height: 30px;
+}
+
+#results #row #item #page-footer{
+  margin-top: -10px;
+  font-size: 13px;
+}
+
+
+/***********************  Preview ***************/
+#preview{
+  margin-top: 20px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#preview #heading{
+  color: rgb(63, 62, 62);
+  font-size: 25px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+
+#preview #info{
+  margin-top: -10px;
+  display: flex;
+}
+
+
+#preview #info div{
+  height: 40px;
+  padding-left: 10px;
+  margin-right: 20px;
+  border-left: 2px solid rgb(167, 165, 165);
+}
+
+#preview #info div h2{
+  font-family: 'Telex', sans-serif;
+  margin-top: 0px;
+  font-size: 14px;
+  color: #0172B5;
+}
+
+#preview #info div p{
+  font-size: 13px;
+  margin-top: 0px;
+}
+
+#preview #info div p #icon{
+  color: #0172B5;
+}
+
+#preview #brief{
+  font-family: 'Telex', sans-serif;
+  margin-top: 30px;
+  color: rgb(71, 69, 69);
+}
+
+#pages-content{
+  margin-top: 30px;
+  display: flex;
+  margin-bottom: 30px;
+}
+
+#pages-content #left{
+  height: fit-content;
+  text-align: center;
+  flex-basis: 25%;
+  background-color: #ffffff;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+
+}
+
+#pages-content #left h4{
+  background-color: #0172B5;
+  line-height: 50px;
+  text-align: center;
+  margin-top: -10px;
+  color: #ffffff;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+}
+
+#pages-content #left p{
+  text-align: left;
+  line-height: 20px;
+  font-size: 13px;
+  margin-left: 10px;
+  padding-top: -10px;
+  margin: 0px;
+}
+
+#pages-content #left p:last-child{
+  margin-bottom: 10px;
+}
+
+#pages-content #left p:first-child{
+  margin-top: -10px;
+}
+
+#pages-content #left p #icon{
+  color: green;
+  font-size: 18px;
+  margin-top: 5px;
+  margin-right: 5px;
+}
+
+#pages-content #left button{
+  text-align: center;
+  margin-bottom: 10px;
+  display: block;
+  width: 80%;
+  margin-left: 20px;
+  color: #ffffff;
+  background-color: orangered;
+  border: none;
+  border-radius: 3px;
+  height: 30px;
+  font-size: 13px;
+}
+
+#pages-content #left button span{
+  margin-left: 10px;
+}
+
+#pages-content #right{
+  flex-basis: 60%;
+  margin-left: 10px;
+}
+
+#pages-content #right img{
+  height: 800px;
+  filter: grayscale(100%);
+  width: 800px;
+}
+
+/***************** error ************/
+#add-form .error{
+  padding: 5px;
+  color: red;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
